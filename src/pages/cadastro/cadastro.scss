@@ -1,3 +1,23 @@
 page-cadastro {
-
+  background: #677FA1 url('/assets/img/bg-sky.png') center top repeat-y;
+}
+page-cadastro .content {
+  background: transparent url('/assets/img/bg-run.jpeg') center bottom no-repeat;
+}
+page-cadastro .spacer-small {
+  height: 3rem;
+}
+page-cadastro .spacer {
+  height: 8rem;
+}
+page-cadastro .spacer-big {
+  height: 12rem;
+}
+page-cadastro .item-md-light {
+  color: #f0f0f0;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0;
+  text-align: center;
 }

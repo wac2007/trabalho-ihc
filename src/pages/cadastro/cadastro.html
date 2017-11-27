@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -33,7 +33,7 @@
         <ion-input type="text" placeholder=""></ion-input>
       </ion-item>
     </ion-list>
-    <div class="spacer" style="width:300px;height:28px;" id="cadastro-spacer2"></div>
+    <div class="spacer-small"></div>
     <ion-item-divider color="light" id="cadastro-list-item-divider4">
       Foto de Perfil
     </ion-item-divider>
@@ -41,7 +41,7 @@
     <button id="cadastro-button5" ion-button color="stable" block>
       Escolher Imagem
     </button>
-    <div class="spacer" style="width:300px;height:28px;" id="cadastro-spacer5"></div>
+    <div class="spacer-small"></div>
     <ion-item-divider color="light" id="cadastro-list-item-divider2">
       Coach
     </ion-item-divider>
@@ -79,7 +79,7 @@
         </ion-option>
       </ion-select>
     </ion-item>
-    <div class="spacer" style="width:300px;height:28px;" id="cadastro-spacer4"></div>
+    <div class="spacer-small"></div>
     <ion-item-divider color="light" id="cadastro-list-item-divider3">
       Experiência
     </ion-item-divider>
@@ -101,12 +101,14 @@
       </ion-label>
       <ion-radio></ion-radio>
     </ion-item>
-    <button id="cadastro-button3" ion-button color="positive" block on-click="goToHistRico()">
+    <div class="spacer-small"></div>
+    
+    <button id="cadastro-button3" ion-button color="primary" block on-click="goToHistRico()">
       Cadastrar
     </button>
-    <button id="cadastro-button4" ion-button color="stable" block on-click="goBack()">
+    <button id="cadastro-button4" ion-button color="dark" block on-click="goBack()">
       Voltar
     </button>
-    <div class="spacer" style="width:300px;height:28px;" id="cadastro-spacer3"></div>
+    <div class="spacer-big"></div>
   </form>
 </ion-content>
