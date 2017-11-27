@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Social Running
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page5">
+  <form id="socialRunning-form1">
+    <ion-list id="socialRunning-list1">
+      <ion-item id="socialRunning-input1">
+        <ion-label>
+          Email
+        </ion-label>
+        <ion-input type="email" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="socialRunning-input2">
+        <ion-label>
+          Senha
+        </ion-label>
+        <ion-input type="password" placeholder=""></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="height:40px;" id="socialRunning-spacer1"></div>
+    <button id="socialRunning-button1" ion-button color="positive" block on-click="goToHistRico()">
+      Login
+    </button>
+    <button id="socialRunning-button2" ion-button clear color="positive" block on-click="goToCadastro()">
+      Ou crie sua conta!
+    </button>
+  </form>
+</ion-content>
