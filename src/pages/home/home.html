@@ -1,0 +1,26 @@
+<ion-content padding>
+  <img class="logo" src="/assets/img/logo.png" />
+  <div class="bottom">
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          Email
+        </ion-label>
+        <ion-input type="email" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          Senha
+        </ion-label>
+        <ion-input type="password" placeholder=""></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="spacer"></div>
+    <button id="socialRunning-button1" ion-button color="positive" block (click)="goHistory()">
+      Login
+    </button>
+    <button id="socialRunning-button2" ion-button clear color="positive" block (click)="goSignUp()">
+      Ou crie sua conta!
+    </button>
+  </div>
+</ion-content>

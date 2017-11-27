@@ -3,10 +3,7 @@ import { Platform, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-
-
-import { SocialRunningPage } from '../pages/social-running/social-running';
-
+import { HomePage } from '../pages/home/home';
 
 
 @Component({
@@ -14,7 +11,7 @@ import { SocialRunningPage } from '../pages/social-running/social-running';
 })
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
-    rootPage:any = SocialRunningPage;
+    rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
