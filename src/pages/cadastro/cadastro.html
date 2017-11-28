@@ -9,7 +9,6 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page6">
-  <form id="cadastro-form2">
     <ion-list id="cadastro-list2">
       <ion-item-divider color="light" id="cadastro-list-item-divider1">
         Conta
@@ -80,27 +79,29 @@
       </ion-select>
     </ion-item>
     <div class="spacer-small"></div>
-    <ion-item-divider color="light" id="cadastro-list-item-divider3">
-      Experiência
-    </ion-item-divider>
-    <ion-item id="cadastro-radio1">
-      <ion-label>
-        Iniciante (Menos de 1 ano)
-      </ion-label>
-      <ion-radio></ion-radio>
-    </ion-item>
-    <ion-item id="cadastro-radio2">
-      <ion-label>
-        Moderado (1 a 2 anos)
-      </ion-label>
-      <ion-radio></ion-radio>
-    </ion-item>
-    <ion-item id="cadastro-radio3">
-      <ion-label>
-        Veterano (Mais de 2 anos)
-      </ion-label>
-      <ion-radio></ion-radio>
-    </ion-item>
+    <ion-list radio-group [(ngModel)]="radioXP">
+      <ion-item-divider color="light" id="cadastro-list-item-divider3">
+        Experiência
+      </ion-item-divider>
+      <ion-item id="cadastro-radio1">
+        <ion-label>
+          Iniciante (Menos de 1 ano)
+        </ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+      <ion-item id="cadastro-radio2">
+        <ion-label>
+          Moderado (1 a 2 anos)
+        </ion-label>
+        <ion-radio value="2"></ion-radio>
+      </ion-item>
+      <ion-item id="cadastro-radio3">
+        <ion-label>
+          Veterano (Mais de 2 anos)
+        </ion-label>
+        <ion-radio value="3"></ion-radio>
+      </ion-item>
+    </ion-list>
     <div class="spacer-small"></div>
     
     <button id="cadastro-button3" ion-button color="primary" block (click)="goHistory()">
@@ -110,5 +111,4 @@
       Voltar
     </button>
     <div class="spacer-big"></div>
-  </form>
 </ion-content>

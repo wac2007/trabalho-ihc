@@ -8,6 +8,8 @@ import { HistoryPage } from '../history/history';
 })
 export class CadastroPage {
 
+  public radioXP;
+
   constructor(public navCtrl: NavController) {
   }
   goHistory(){
