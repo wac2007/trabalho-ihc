@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HistoryPage } from '../history/history';
+
+import { ConfigPage } from '../config/config';
+
 
 @Component({
   selector: 'page-cadastro',
@@ -12,8 +14,9 @@ export class CadastroPage {
 
   constructor(public navCtrl: NavController) {
   }
-  goHistory(){
-    this.navCtrl.setRoot(HistoryPage);
+  
+  doSave(){
+    this.navCtrl.setRoot(ConfigPage);
   }
   goBack(){
     this.navCtrl.pop();

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Perfil
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item-divider color="dark">
+    Foto de Perfil
+  </ion-item-divider>
+  <img src="assets/img/profile.png" class="profile" />
+  <button ion-button color="dark" block>
+    Escolher Imagem
+  </button>
+  <div class="spacer-small"></div>
+  <ion-item-divider color="dark">
+    Coach
+  </ion-item-divider>
+  <ion-item>
+    <ion-label>
+      Nascimento
+    </ion-label>
+    <ion-input type="text" placeholder=""></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      Peso
+    </ion-label>
+    <ion-input type="text" placeholder=""></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      Altura
+    </ion-label>
+    <ion-input type="text" placeholder=""></ion-input>
+  </ion-item>
+  <div class="spacer"></div>
+  <button ion-button color="dark" block (click)="goHistory()">
+    Salvar Perfil
+  </button>
+</ion-content>

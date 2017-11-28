@@ -32,36 +32,6 @@
         <ion-input type="text" placeholder=""></ion-input>
       </ion-item>
     </ion-list>
-    <div class="spacer-small"></div>
-    <ion-item-divider color="light" id="cadastro-list-item-divider4">
-      Foto de Perfil
-    </ion-item-divider>
-    <img src="assets/img/profile.png" class="profile" />
-    <button id="cadastro-button5" ion-button color="stable" block>
-      Escolher Imagem
-    </button>
-    <div class="spacer-small"></div>
-    <ion-item-divider color="light" id="cadastro-list-item-divider2">
-      Coach
-    </ion-item-divider>
-    <ion-item id="cadastro-input6">
-      <ion-label>
-        Nascimento
-      </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="cadastro-input7">
-      <ion-label>
-        Peso
-      </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="cadastro-input8">
-      <ion-label>
-        Altura
-      </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
-    </ion-item>
     <ion-item id="cadastro-select1">
       <ion-label>
         Objetivo
@@ -80,22 +50,22 @@
     </ion-item>
     <div class="spacer-small"></div>
     <ion-list radio-group [(ngModel)]="radioXP">
-      <ion-item-divider color="light" id="cadastro-list-item-divider3">
+      <ion-item-divider color="light">
         Experiência
       </ion-item-divider>
-      <ion-item id="cadastro-radio1">
+      <ion-item>
         <ion-label>
           Iniciante (Menos de 1 ano)
         </ion-label>
         <ion-radio value="1"></ion-radio>
       </ion-item>
-      <ion-item id="cadastro-radio2">
+      <ion-item>
         <ion-label>
           Moderado (1 a 2 anos)
         </ion-label>
         <ion-radio value="2"></ion-radio>
       </ion-item>
-      <ion-item id="cadastro-radio3">
+      <ion-item>
         <ion-label>
           Veterano (Mais de 2 anos)
         </ion-label>
@@ -104,7 +74,7 @@
     </ion-list>
     <div class="spacer-small"></div>
     
-    <button id="cadastro-button3" ion-button color="primary" block (click)="goHistory()">
+    <button id="cadastro-button3" ion-button color="primary" block (click)="doSave()">
       Cadastrar
     </button>
     <button id="cadastro-button4" ion-button color="dark" block (click)="goBack()">
