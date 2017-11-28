@@ -10,12 +10,10 @@ export class CadastroPage {
 
   constructor(public navCtrl: NavController) {
   }
-  goToHistRico(params){
-    if (!params) params = {};
+  goHistory(){
     this.navCtrl.setRoot(HistoryPage);
   }
-  goBack(params){
-    if (!params) params = {};
+  goBack(){
     this.navCtrl.pop();
   }
 }
