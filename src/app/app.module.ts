@@ -6,22 +6,20 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 
-import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
 import { CadastroPage } from '../pages/cadastro/cadastro';
-import { HistRicoPage } from '../pages/hist-rico/hist-rico';
+import { HistoryPage } from '../pages/history/history';
 import { EncontrarParceiroPage } from '../pages/encontrar-parceiro/encontrar-parceiro';
 import { CorrendoPage } from '../pages/correndo/correndo';
 import { VerInformaEsPage } from '../pages/ver-informa-es/ver-informa-es';
 import { HomePageModule } from '../pages/home/home.module';
-
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    TabsControllerPage,
     CadastroPage,
-    HistRicoPage,
+    HistoryPage,
     EncontrarParceiroPage,
     CorrendoPage,
     VerInformaEsPage
@@ -29,14 +27,14 @@ import { HomePageModule } from '../pages/home/home.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HomePageModule
+    HomePageModule,
+    ComponentsModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    TabsControllerPage,
     CadastroPage,
-    HistRicoPage,
+    HistoryPage,
     EncontrarParceiroPage,
     CorrendoPage,
     VerInformaEsPage

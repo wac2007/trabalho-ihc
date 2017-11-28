@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 
-import { HistRicoPage } from '../hist-rico/hist-rico';
+import { HistoryPage } from '../history/history';
 import { CadastroPage } from '../cadastro/cadastro';
 
 
@@ -16,7 +16,7 @@ export class HomePage {
   }
 
   goHistory() {
-    this.navCtrl.setRoot(HistRicoPage);
+    this.navCtrl.setRoot(HistoryPage);
   }
 
   goSignUp() {

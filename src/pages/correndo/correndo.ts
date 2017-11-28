@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HistRicoPage } from '../hist-rico/hist-rico';
+import { HistoryPage } from '../history/history';
 
 @Component({
   selector: 'page-correndo',
@@ -12,6 +12,6 @@ export class CorrendoPage {
   }
   goToHistRico(params){
     if (!params) params = {};
-    this.navCtrl.setRoot(HistRicoPage);
+    this.navCtrl.setRoot(HistoryPage);
   }
 }

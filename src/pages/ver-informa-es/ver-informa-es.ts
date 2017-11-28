@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HistRicoPage } from '../hist-rico/hist-rico';
 
 @Component({
   selector: 'page-ver-informa-es',
