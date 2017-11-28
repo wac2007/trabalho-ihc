@@ -6,7 +6,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { HistoryPage } from '../pages/history/history';
 import { TrainLocationPage } from '../pages/train-location/train-location';
-import { ConfigPageModule } from '../pages/config/config.module';
 import { ConfigPage } from '../pages/config/config';
 
 
@@ -36,6 +35,10 @@ export class MyApp {
 
   public goConfig() {
     this.navCtrl.setRoot(ConfigPage);
+  }
+
+  public goHome() {
+    this.navCtrl.setRoot(HomePage);
   }
   
 }
