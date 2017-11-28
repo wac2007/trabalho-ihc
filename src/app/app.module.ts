@@ -10,9 +10,9 @@ import { CadastroPage } from '../pages/cadastro/cadastro';
 import { HistoryPage } from '../pages/history/history';
 import { EncontrarParceiroPage } from '../pages/encontrar-parceiro/encontrar-parceiro';
 import { CorrendoPage } from '../pages/correndo/correndo';
-import { VerInformaEsPage } from '../pages/ver-informa-es/ver-informa-es';
 import { HomePageModule } from '../pages/home/home.module';
 import { ComponentsModule } from '../components/components.module';
+import { ViewInfoPageModule } from '../pages/view-info/view-info.module';
 
 
 @NgModule({
@@ -22,13 +22,13 @@ import { ComponentsModule } from '../components/components.module';
     HistoryPage,
     EncontrarParceiroPage,
     CorrendoPage,
-    VerInformaEsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HomePageModule,
     ComponentsModule,
+    ViewInfoPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +37,6 @@ import { ComponentsModule } from '../components/components.module';
     HistoryPage,
     EncontrarParceiroPage,
     CorrendoPage,
-    VerInformaEsPage
   ],
   providers: [
     StatusBar,

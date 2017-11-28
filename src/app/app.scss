@@ -14,6 +14,20 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.content {
+  background: color($colors, primary, base);
+}
+
+.spacer-small {
+  height: 3rem;
+}
+.spacer {
+  height: 8rem;
+}
+.spacer-big {
+  height: 12rem;
+}
+
 ion-menu .content {
   background: #000;
   color: #FFF;
