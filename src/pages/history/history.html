@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="dark">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -8,82 +8,50 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page7">
-  <div id="histRico-container1">
-    <ion-card id="histRico-card21">
-      <ion-list>
-        <div style="width:100%;height:220px;margin:0px 0px;line-height:250px;background-color:#e8ebef;text-align:center;">
-          <i class="icon ion-image" style="font-size:64px;color:#888;vertical-align:middle;"></i>
-        </div>
-        <ion-item-divider color="light" id="histRico-list-item-divider5">
-          21/11/2017
-        </ion-item-divider>
-        <ion-item color="none" id="histRico-list-item5">
-          <ion-icon name="stopwatch" item-left></ion-icon>
-          01:20 h
-        </ion-item>
-        <ion-item color="none" id="histRico-list-item6">
-          <ion-icon name="pin" item-left></ion-icon>
-          20 km
-        </ion-item>
-        <button id="histRico-button8" ion-button color="dark" block>
-          Ver Detalhes
-        </button>
-      </ion-list>
-    </ion-card>
-  </div>
-  <div id="histRico-container2">
-    <ion-card id="histRico-card22">
-      <ion-list>
-        <div style="width:100%;height:220px;margin:0px 0px;line-height:250px;background-color:#e8ebef;text-align:center;">
-          <i class="icon ion-image" style="font-size:64px;color:#888;vertical-align:middle;"></i>
-        </div>
-        <ion-item-divider color="light" id="histRico-list-item-divider6">
-          18/11/2017
-        </ion-item-divider>
-        <ion-item color="none" id="histRico-list-item7">
-          <ion-icon name="stopwatch" item-left></ion-icon>
-          00:46 h
-        </ion-item>
-        <ion-item color="none" id="histRico-list-item8">
-          <ion-icon name="pin" item-left></ion-icon>
-          12 km
-        </ion-item>
-        <ion-item color="positive" id="histRico-list-item9">
-          <ion-icon name="contact" item-left></ion-icon>
-          Maria Cardoso
-        </ion-item>
-        <button id="histRico-button10" ion-button color="dark" block on-click="goToVerInformaEs()">
-          Ver Detalhes
-        </button>
-      </ion-list>
-    </ion-card>
-  </div>
-  <div id="histRico-container3">
-    <ion-card id="histRico-card23">
-      <ion-list>
-        <div style="width:100%;height:220px;margin:0px 0px;line-height:250px;background-color:#e8ebef;text-align:center;">
-          <i class="icon ion-image" style="font-size:64px;color:#888;vertical-align:middle;"></i>
-        </div>
-        <ion-item-divider color="light" id="histRico-list-item-divider7">
-          17/11/2017
-        </ion-item-divider>
-        <ion-item color="none" id="histRico-list-item10">
-          <ion-icon name="stopwatch" item-left></ion-icon>
-          01:42 h
-        </ion-item>
-        <ion-item color="none" id="histRico-list-item11">
-          <ion-icon name="pin" item-left></ion-icon>
-          27 km
-        </ion-item>
-        <ion-item color="positive" id="histRico-list-item12">
-          <ion-icon name="contact" item-left></ion-icon>
-          João Silva
-        </ion-item>
-        <button id="histRico-button11" ion-button color="dark" block on-click="goToVerInformaEs()">
-          Ver Detalhes
-        </button>
-      </ion-list>
-    </ion-card>
-  </div>
+<ion-content padding>
+  <ion-list class="filters">
+    <ion-item-divider color="dark">
+      Filtros
+    </ion-item-divider>
+    <ion-item>
+      <ion-label>Ano</ion-label>
+      <ion-select [(ngModel)]="year">
+        <ion-option value="2017">2017</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mês</ion-label>
+      <ion-select [(ngModel)]="month">
+        <ion-option value="10">Outubro</ion-option>
+        <ion-option value="11">Novembro</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-totoro.png">
+      </ion-thumbnail>
+      <h2>21/11/2017</h2>
+      <p>10km</p>
+      <button ion-button clear item-end (click)="viewInfo()">Detalhes</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-totoro.png">
+      </ion-thumbnail>
+      <h2>18/11/2017</h2>
+      <p>12km</p>
+      <button ion-button clear item-end (click)="viewInfo()">Detalhes</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-totoro.png">
+      </ion-thumbnail>
+      <h2>21/10/2017</h2>
+      <p>8km</p>
+      <button ion-button clear item-end (click)="viewInfo()">Detalhes</button>
+    </ion-item>
+  </ion-list>
 </ion-content>
