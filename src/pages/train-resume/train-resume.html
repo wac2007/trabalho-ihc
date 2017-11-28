@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Resumo do Treino
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <img src="assets/img/map-1.png"/>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Tipo de Treino</ion-label>
+      <ion-input text-right type="text" value="Força" disabled></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Começar Treino</ion-label>
+      <ion-select [(ngModel)]="beginTrain">
+        <ion-option value="1">Agora</ion-option>
+        <ion-option value="2">30 minutos</ion-option>
+        <ion-option value="3">1 hora</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list radio-group [(ngModel)]="share">
+    <ion-item-divider color="light">
+      Compartilhar Treino?
+    </ion-item-divider>
+    <ion-item>
+      <ion-label>
+        Sim
+      </ion-label>
+      <ion-radio value="Y"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Não
+      </ion-label>
+      <ion-radio value="N"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button color="dark" block large (click)="goBegin()">
+    Começar
+  </button>
+</ion-content>
