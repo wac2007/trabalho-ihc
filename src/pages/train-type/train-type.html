@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar color="dark">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        Tipo de Treino
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+  <img class="logo" src="/assets/img/logo.png" />
+  <ion-list class="spaced">
+    <button ion-button color="dark" block large (click)="goTrainResume()">
+      Força
+    </button>
+    <button ion-button color="dark" block large (click)="goTrainResume()">
+      Resistência
+    </button>
+    <button ion-button color="dark" block large (click)="goTrainResume()">
+      Regenerativo
+    </button>
+  </ion-list>
+</ion-content>
