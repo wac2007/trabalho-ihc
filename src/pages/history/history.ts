@@ -9,12 +9,12 @@ import { ViewInfoPage } from '../view-info/view-info';
   templateUrl: 'history.html'
 })
 export class HistoryPage {
-  private year = 2017;
-  private month = 11;
+  public year = 2017;
+  public month = 11;
   constructor(public navCtrl: NavController) {
   }
 
-  private viewInfo() {
+  public viewInfo() {
     this.navCtrl.push(ViewInfoPage);
   }
 }
