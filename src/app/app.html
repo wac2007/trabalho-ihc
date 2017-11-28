@@ -1,20 +1,23 @@
 <ion-menu [content]="mainContent">
   <ion-header>
     <ion-navbar color="primary">
-        <ion-title>Menu</ion-title>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Menu</ion-title>
     </ion-navbar>
   </ion-header>
   <ion-content>
     <ion-list class="no-spacing">
       <img src="assets/img/profile.png" class="profile" />
       <h1 class="welcome-text">Olá, <span>Fulana</span></h1>
-      <button ion-button color="primary" block outline>
+      <button ion-button menuToggle color="primary" block outline (click)="goTrain()">
         Iniciar Treino
       </button>
-      <button ion-button color="primary" block outline>
+      <button ion-button menuToggle color="primary" block outline (click)="goHistory()">
         Histórico
       </button>
-      <button ion-button color="primary" block outline>
+      <button ion-button menuToggle color="primary" block outline (click)="goConfig()">
         Configurações
       </button>
       <ion-item color="primary">
